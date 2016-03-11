@@ -1,0 +1,302 @@
+<% content_for :features, "index" %>
+
+<nav class="navbar navbar-default navbar-transparent navbar-fixed-top" role="navigation">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar bar1"></span>
+                <span class="icon-bar bar2"></span>
+                <span class="icon-bar bar3"></span>
+              </button>
+              <a id="timLink" href="http://www.creative-tim.com">
+                   <div class="logo-container">
+                        <div class="icon-logo">
+                            <%= image_tag("soundtracks-cinema-logo-small.png", width: '100') %> 
+                        </div>
+                    </div>
+              </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" data-nav-image="assets/img/bg4.jpg">
+              <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                          <a href="#" class="dropdown-toggle btn btn-simple btn-neutral" data-toggle="dropdown">
+                            Live Examples
+                            <b class="caret"></b>
+                          </a>
+                           <ul class="dropdown-menu dropdown-with-icons">
+                             <li>
+                                <a href="/components">
+                                    <i class="pe-7s-display2"></i> All Components
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/home">
+                                    <i class="pe-7s-home"></i> Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/blog-page">
+                                    <i class="pe-7s-comment"></i> Blog
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/blog-post">
+                                    <i class="pe-7s-news-paper"></i> Blog Post
+                                </a>
+                            </li>
+                            <li>
+                            </li><li>
+                                <a href="/ecommerce">
+                                    <i class="pe-7s-ticket"></i> Ecommerce
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/product-page">
+                                    <i class="pe-7s-piggy"></i> Product Page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/contact-us">
+                                    <i class="pe-7s-mail-open-file"></i> Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/about-us">
+                                    <i class="pe-7s-info"></i> About Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/pricing">
+                                    <i class="pe-7s-cash"></i> Pricing Page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="/sidebar">
+                                    <i class="pe-7s-menu"></i> Sidebar Menu
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="pe-7s-gift"></i> More (soon)
+                                </a>
+                            </li>
+                          </ul>
+                    </li>
+                    <li>
+                        <a id="freeKitLink" target="_blank" href="http://www.creative-tim.com/get-shit-done" class="btn btn-simple btn-neutral">
+                             Get Free Demo
+                        </a>
+                    </li>
+                    <li>
+                        <button onclick="window.location.href='http://www.creative-tim.com/buy/get-shit-done-pro'" id="buyButton" class="btn btn-round btn-warning btn-fill">Buy Now</button>
+                    </li>
+               </ul>
+
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+
+<div class='blurred-container'>
+     <!--
+     <a href="http://creative-tim.com">
+         <div class="logo-container">
+            <div class="logo">
+                <%= image_tag("soundtracks-cinema-logo.png") %>
+            </div>
+            <div class="brand">
+                Creative Tim
+            </div>
+        </div>
+    </a>
+  -->
+    <div class="motto">
+      <div class="logo-container">
+            <div class="main-logo">
+        <%= image_tag("soundtracks-cinema-logo.png") %>
+      </div>
+      <!-- <h3 class="motivation main-logo">Jobs for Composers</h3> -->
+    </div>
+        <!--<div>Get</div>
+        <div class="border no-right-border">Sh</div><div class="border">it</div>
+        <div>Done</div>
+      -->
+    </div>
+  <div class="img-src" style="background-image: url('<%= asset_path("recording-studio.jpg") %>')"></div>
+  <div class='img-src blur' style="background-image: url('<%= asset_path("mic_blur.jpg") %>')"></div>
+</div>
+
+
+
+
+
+<div class="main">
+    
+<div class="container tim-container">
+        <div class="tim-title">
+            <h2 class="text-center">Jobs for Composers</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+              <div class="form-group">
+                <input type="text" value="" placeholder="Search for Job" class="form-control" />
+              </div>
+                <div class="switches">
+                  <h3>Exclude Agency</h3>
+                  <input type="checkbox" data-toggle="switch" class="ct-info"/>
+                  <!-- <h3>Offering</h3>
+                  <input type="checkbox" data-toggle="switch" />
+                -->
+                </div>
+              </div>
+            <div class="col-sm-4"></div>
+        </div>
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+<div id="carousel">
+    <!--
+            IMPORTANT - This carousel can have a special class for a smooth transition "gsdk-transition". Since javascript cannot be overwritten, if you want to use it, you can use the bootstrap.js or bootstrap.min.js from the GSDKit or you can open your bootstrap.js file, search for "emulateTransitionEnd(600)" and change it with "emulateTransitionEnd(1200)"
+
+    -->
+    <div id="carousel-example-generic" class="carousel slide gsdk-transition" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <%= image_tag("gsdk/carousel_blue.png", alt: "Awesome Image") %>
+        </div>
+        <div class="item">
+          <%= image_tag("gsdk/carousel_green.png", alt: "Awesome Image") %>
+        </div>
+        <div class="item">
+          <%= image_tag("gsdk/carousel_red.png", alt: "Awesome Image") %>
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+        <span class="fa fa-angle-left"></span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+        <span class="fa fa-angle-right"></span>
+      </a>
+    </div>
+</div> <!-- end carousel -->
+<div class="main">
+    <div class="container tim-container">
+        <div id="extras">
+            <div class="space"></div>
+            <div class="row">
+                <div class="col-md-7">
+                        <%= image_tag("gsdk/dulau.jpg", alt: "Rounded Image", class:"img-rounded") %>
+                </div>
+                <div class="col-md-5">
+                                <h1 class="text-center">About Creative Tim
+
+                                <small class="subtitle">Get to know our favourite designer</small></h1>
+                                <hr>
+                                    <p>
+                                    Creative Tim symbolizes the creative spirit inside of each and everyone of us. A designer by trade, he enjoys making the World Wide Web a more beautiful place and helping others do the same.
+                                    </p>
+                                    <p>
+                                        Creative Tim stands for everything a designer looks in his work: clean, functions interfaces for great products. The number of friends with similar attitude can only increase over time, since the vision for a better web is a wish of many designers. Be sure to enroll and browse around for anything that may brng extra value to your project and ask Tim wherever you see something missing.
+                                    </p>
+                                    <p>
+                                    Tim thinks communication is key and he enjoys all the feedback you give him. If you have any ideas about how he could make our community better or even if you have any questions or complaints drop him a line.                                    </p>
+
+                </div>
+            </div>
+        </div>
+    <!--     end extras -->
+    </div>
+<!-- end container -->
+<div class="space"></div>
+</div>
+
+
+<!-- end main -->
+
+
+<div class="footer">
+    <div class="overlayer">
+    <div class="container">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-sm-7">
+                        <br>
+                        <h3 class="txt-white">Be Social </h3>
+                        <p class="txt-gray">Do you like this freebie? Want to get more stuff like this?
+Subscribe to Creative Tim to stay tuned on the best design items on the web.</p>
+<br><br>
+                        <a class="btn btn-info  btn-round btn-wd btn-fill social-share social-twitter" href="#"><div class="count" href="#"><i class="fa fa-twitter fa-fw"></i> Tweet </div><div class="share"><span></span></div></a>
+
+                        <a class="btn btn-danger  btn-round btn-wd btn-fill social-share social-twitter" href="#"><div class="count" href="#"><i class="fa fa-google-plus fa-fw"></i> Share </div><div class="share"><span></span></div></a>
+
+                       <a class="btn btn-primary btn-round btn-wd btn-fill social-share" href="#"><div class="count" href="#"><i class="fa fa-facebook fa-fw"></i> Share </div><div class="share"><span></span></div></a>
+
+                    <div class="credits">
+                        &copy; 2014 Get Shit Done Kit by <a href="http://creative-tim.com"> Creative Tim</a>, made with <i class="fa fa-heart heart" alt="love"></i> for a better web.
+                    </div>
+                    </div>
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-4">
+                        <div class="card text-center">
+                            <div id="successMessage" class="alert alert-success" style="display:none">
+                                We've got you!
+                            </div>
+                            <h3>GSDKit Pro<br>
+                                <small>Coming soon...</small>
+                            </h3>
+
+                            <h5>GSDKit Free<b class="text-muted"> items and layout</b></h5>
+                            <h5>PSD Files <b class="text-muted">for designers</b></h5>
+                            <h5><b class="text-muted">Useful</b> Samples</h5>
+                            <h5><b class="text-muted">Brand </b>New Icons</h5>
+                             <form class="subscribe-form" method="post" accept-charset="UTF-8">
+                                <div style="margin:0;padding:0;display:inline">
+                                <input type="hidden" value="â" name="utf8">
+                                </div>
+                                <input id="subscribe_email" class="form-control" type="email" placeholder="Write your email here..." name="subscribe_email">
+                                <br>
+                                <input class="btn btn-info btn-wd btn-fill" type="button" onclick="sendEmailToMailChimp()" value="Subscribe" name="commit">
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+</div>
