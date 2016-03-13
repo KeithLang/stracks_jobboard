@@ -39,3 +39,10 @@
 .switches {
   text-align:center;
 }
+
+
+.footer {
+  background-image: url('background-long.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+} 
